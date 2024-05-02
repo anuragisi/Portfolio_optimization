@@ -58,6 +58,7 @@ print(start_date)
   <img width="579" alt="image" src="https://github.com/anuragprasad95/Portfolio_optimization/assets/3609255/dcb0e231-0fe5-408c-a914-43a9aaa9a491">
 
 </samp>
+
 # 3. Calculate Lognormal Returns
 <h2>Calculate the lognormal returns for each ticker</h2>
 <pre>log_returns = np.log(adj_close_df / adj_close_df.shift(1))
@@ -66,6 +67,7 @@ log_returns</pre>
   <img width="624" alt="image" src="https://github.com/anuragprasad95/Portfolio_optimization/assets/3609255/5ac30e9c-7fbb-4f1f-a143-4d185961c9f9">
 
 </samp>
+
 # 4. Calculate Covariance Matrix
 <h2>Calculate the covariance matrix using annualized log returns</h2>
 <pre>cov_matrix = log_returns.cov()*252
@@ -73,6 +75,7 @@ cov_matrix</pre>
 <samp>
   <img width="628" alt="image" src="https://github.com/anuragprasad95/Portfolio_optimization/assets/3609255/5f2a1ed1-b874-454b-8afd-09c2fa250b7f">
 </samp>
+
 # 5. Define Portfolio Performance Metrics
 <h2>Calculate the portfolio standard deviation</h2>
 <p>(This calculates the portfolio variance, which is a measure of the risk associated with a portfolio of assets. It represents the combined volatility of the assets in the portfolio.)</p>
